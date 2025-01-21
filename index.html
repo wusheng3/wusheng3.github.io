@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Simple Website</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+<style>
+/* Inline CSS for simplicity */
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+       .button-block {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #007bff; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            margin: 0 10px;
+            text-decoration: none; /* Remove underline from link */
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+header {
+background-color: #35424a;
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+nav ul {
+list-style: none;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin: 0 15px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+main {
+flex: 1;
+padding: 20px;
+text-align: center;
+}
+footer {
+background-color: #35424a;
+color: white;
+text-align: center;
+padding: 10px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+    </style>
+</head>
+<body>
+
+
+<header>
+<h1>Welcome to My Simple Website</h1>
+<nav>
+<ul>
+<li><a href="#/Home">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h2>Home Page</h2>
+<p>This is a simple website with a header and footer.</p>
+    <div class="button-block">
+        <a href="index.html" title="Return to main page"class="button">Home</a>
+        <a href="about.html" title="Learn more about us" class="button">About</a>
+        <a href="services.html" title="Discover our useful services" class="button">Services</a>
+        <a href="contact.html" title="Get in touch with us" class="button">Contact</a>
+    </div>
+</main>
+
+<footer>
+<p>&copy; 2025 My Simple Website</p>
+</footer>
+
+</body>
+</html>
